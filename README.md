@@ -1,37 +1,36 @@
 🧠 Lung Cancer Detection using CNN with Transfer Learning (EfficientNet-B5)
 📌 Overview
 
-This project focuses on early detection of lung cancer from medical imaging using deep learning. It leverages transfer learning with EfficientNet-B5 to achieve high accuracy while reducing training time and computational cost.
+This project aims to detect lung cancer from CT scan images using deep learning. It utilizes transfer learning with EfficientNet-B5 to achieve high accuracy while minimizing training time and computational cost.
 
-The model is trained on preprocessed lung CT scan images and classifies them into cancerous and non-cancerous categories, assisting in faster and more reliable diagnosis.
+The model classifies medical images into cancerous and non-cancerous categories, supporting early diagnosis and reducing manual effort in healthcare analysis.
 
-🚀 Key Features
-🧩 Transfer Learning using EfficientNet-B5
-🧼 Advanced image preprocessing:
-Histogram Equalization
-Contrast Enhancement
-Image Resizing & Normalization
-⚡ Optimized training with reduced overfitting
-📊 Performance evaluation using accuracy, precision, recall, F1-score
-🧪 Model comparison with baseline CNN architectures
+🚀 Features
+Transfer Learning using EfficientNet-B5
+Image preprocessing (Histogram Equalization, Contrast Enhancement)
+Binary classification (Cancer / Non-Cancer)
+Performance evaluation using Accuracy, Precision, Recall, F1-score
+Reduced overfitting using Dropout and fine-tuning
 🛠️ Tech Stack
 Language: Python
 Libraries: TensorFlow, Keras, NumPy, Pandas, OpenCV, Matplotlib
 Model: EfficientNet-B5 (Pretrained on ImageNet)
 Environment: Jupyter Notebook / Google Colab
 🧬 Model Architecture
-Used EfficientNet-B5 as the base model
-Applied Global Average Pooling
-Added Fully Connected Layers + Dropout for regularization
-Final layer uses Sigmoid activation for binary classification
+Base Model: EfficientNet-B5
+Global Average Pooling layer
+Fully Connected Dense layers
+Dropout for regularization
+Sigmoid activation for binary classification
 📊 Results
-Achieved high classification accuracy on validation dataset
+Achieved high classification accuracy on validation data
 Improved performance compared to traditional CNN models
-Reduced training time due to transfer learning
+Efficient training due to transfer learning
 
-(You can add actual numbers here if you have them — recruiters love that 👀)
+(Add your actual metrics here if available)
 
 📂 Project Structure
+
 ├── dataset/
 ├── notebooks/
 ├── models/
@@ -39,22 +38,25 @@ Reduced training time due to transfer learning
 ├── results/
 ├── requirements.txt
 └── README.md
+
 ▶️ How to Run
-Clone the repository
+1. Clone the repository
 git clone https://github.com/your-username/lung-cancer-detection.git
-Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
-Run the notebook / script
+3. Run the project
 python train.py
+
 💡 Future Improvements
-Add multi-class classification (different cancer stages)
-Deploy as a web application (Flask/React)
-Integrate with real-time hospital systems
-Improve dataset diversity
+Multi-class classification (cancer stages)
+Deployment using Flask/React
+Integration with hospital systems
+Larger and diverse dataset
+
 🎯 Use Case
+Assists doctors in early lung cancer detection
+Reduces manual diagnosis time
+Supports data-driven healthcare decisions
 
-This system can assist healthcare professionals in:
-
-Early diagnosis
-Reducing manual errors
-Faster clinical decision-making
+📜 License
+This project is for educational and research purposes.
