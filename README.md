@@ -39,13 +39,6 @@ Efficient training due to transfer learning
 ├── requirements.txt
 └── README.md
 
-▶️ How to Run
-1. Clone the repository
-git clone https://github.com/your-username/lung-cancer-detection.git
-2. Install dependencies
-pip install -r requirements.txt
-3. Run the project
-python train.py
 
 💡 Future Improvements
 Multi-class classification (cancer stages)
